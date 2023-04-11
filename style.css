@@ -10,6 +10,10 @@
 }
 
 body {
+  	 zoom: 50%;
+  -moz-transform: scale(0.5);
+  -webkit-transform: scale(0.5);
+  transform: scale(0.5);
   background-color: black;
   color: white;
   display: flex;
