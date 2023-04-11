@@ -10,7 +10,7 @@
 }
 
 body {
-  	 zoom: 55%;
+	 zoom: 150%;
   -moz-transform: scale(1);
   -webkit-transform: scale(1);
   transform: scale(1);
@@ -22,6 +22,7 @@ body {
   align-items: center;
   flex-direction: column;
   font-family: "Open Sans", sans-serif;
+   position: absolute;
 }
 
 .logo-container {  
