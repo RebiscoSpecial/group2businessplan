@@ -10,7 +10,7 @@
 }
 
 body {
-	 zoom: 50%;
+	 zoom: 250%;
   -moz-transform: scale(1);
   -webkit-transform: scale(1);
   transform: scale(1);
@@ -22,92 +22,5 @@ body {
   align-items: center;
   flex-direction: column;
   font-family: "Open Sans", sans-serif;
-   position: absolute;
-}
-
-.logo-container {  
-  position: relative;
-  height: var(--circle-diameter);
-  width: var(--circle-diameter);
-  overflow: hidden;
-  animation: fade-in var(--animation-speed) linear 1;
-}
-
-.half-circle {
-  border: solid 8px white;
-  width: var(--circle-diameter);
-  height: calc(var(--circle-diameter) / 2);  
-}
-
-#top-half {  
-  border-top-left-radius: 500px;
-  border-top-right-radius: 500px;
-  border-bottom: none;
-  transform-origin: bottom center;
-  animation: circle-rotate var(--animation-speed) linear 1;    
-  position: absolute;
-  top: 0;    
-  
-}
-
-.text-container {
-  background-color: black;  
-  width: auto;
-  height: auto;  
-  transform: translate(10px, calc(var(--circle-diameter) - 135px));
-  z-index: 3;   
-}
-h1 {
-  z-index: 2;  
-  font-size: 4.5rem;
-  letter-spacing: var(--letter-spacing);
-  line-height: 50px;
-  animation: fade-in var(--animation-speed) linear 1;
-  margin: 0;
-}
-
-#top-half-cover {
-  height: calc(var(--circle-diameter) / 2);
-  width: var(--circle-diameter);  
-  overflow: hidden;  
-}
-
-#bottom-half {    
-  border-bottom-left-radius: 500px;
-  border-bottom-right-radius: 500px;
-  border-top: none;
-  transform-origin: top center;
-  animation: circle-rotate var(--animation-speed) linear 1; 
-}
-
-#bottom-half-cover {  
-  background-color: black;
-  height: calc(var(--circle-diameter) / 2);
-  width: var(--circle-diameter);  
-  position: absolute;
-  top: 50%; 
-  overflow: hidden;  
-  
-}
-
-@keyframes circle-rotate {
-  from {
-    transform: rotate(180deg);
-    
-  }
-  to {
-    transform: rotate(0deg);
-  }
-}
-
-@keyframes fade-in {
-  from {
-    opacity: 0.0;
-    transform: scale(1);
-  }
-  
-  to {
-    opacity: 1.0;
-    transform: scale(1.15);
-  }
+   position: static;
 }
